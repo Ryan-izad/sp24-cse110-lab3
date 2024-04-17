@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Ryan's Lab2 </title>
+    <meta name="Lab2" content="A brief introduction to HTML">
+    <link rel="icon" href="screenshots/favicon-16x16.png">
+  </head>
+  <body>
+
+    <header>
+        <span>
+            <h1>Meeting Minutes </h1>
+            <img src="screenshots/favicon-32x32.png" alt="Logo Image">
+        </span>
+        <p> This is an <strong>informational page</strong> of my group's first meeting! <br> I was unable to attend ;-; </p> 
+    </header>
+
+    <main>
+        <h2> Surfside Software's Introduction Meeting (April 10th)</h2>
+        <section> 
+            <hr>
+            <h3> Attended by:</h3>
+                <ul>
+                    <div>
+                    <li> Jacob </li>
+                    <li> Melissa </li>
+                    <li> Pedro </li>
+                    <li> Peter </li>
+                    <li> Ruiping </li>
+                    <li> Ryan L. </li>
+                    <li> Sean </li>
+                    <li> Sihan </li>
+                    </div>
+                </ul>
+            <h3> Absent:</h3>
+                <ul>
+                    <li> Sunho </li>
+                    <li> Ryan I. </li>
+                    <li> Trent </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2> Agenda: </h2>
+            <ol>
+                <li><b>Introductions</b></li>
+                <li><i>Logistics</i></li>
+                <li><b>Team page discussion</b></li>
+                <li><em>Team video brainstorming</em></li>
+            </ol>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+            <h3> My Introduction Video</h3>
+            <video controls width = "400">
+                <source src="screenshots/intro.mov">
+            </video>
+
+            <br>
+            <br>
+            <b> This is my favorite Daniel Caesar song, <i>Horsepower</i>:</b>
+            <br>
+            <br>
+
+            <audio controls>
+                <source src="screenshots/Horsepower.mp3" type="audio/mp3">
+            </audio>
+
+            <br>
+            <br>
+            <details>
+                <summary>
+                    Click to go to Daniel Caesar's Spotify page
+                </summary>
+                <a href="https://open.spotify.com/artist/20wkVLutqVOYrc0kxFs7rA?si=AW-iH9wBTxiJOJC7FwLr-Q">Daniel Caesar</a>
+            </details>
+
+            <br>
+
+            <form>
+                <fieldset>
+                    <legend> Your feedback </legend>
+                    <label for="liked">Do you like my first website?</label><br>
+                    <input type="checkbox" id="liked" name="liked" value="yes">
+                    <label for="liked">Yes</label>
+                    <input type="checkbox" id="disliked" name="liked" value="no">
+                    <label for="disliked">No</label><br><br>
+
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+                    <label for="visit">How often would you visit my website?</label><br>
+                    <input list="visit-frequency" id="visit" name="visit">
+                    <datalist id="visit-frequency">
+                        <option value="Daily">
+                        <option value="Weekly">
+                        <option value="Monthly">
+                        <option value="Rarely">
+                    </datalist><br><br>
+        
+                    <label for="like">What do you like the most?</label><br>
+                    <select id="like" name="like">
+                        <option value="design">Design</option>
+                        <option value="content">Content</option>
+                        <option value="user-friendly">User-friendly interface</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+        
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <nav>
+            <h3> Important Links:</h3>
+            <a href="https://github.com/cse110-sp24-group17/cse110-sp24-group17">Surfside Software-Team 17's Github Repo</a>
+        </nav>
+    </footer>
+
+  </body>
+</html>
