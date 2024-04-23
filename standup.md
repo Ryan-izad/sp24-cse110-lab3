@@ -1,4 +1,5 @@
 <!-- Note that the majority of this content was written by ChatGpt 3.5 -->
+
 # Standup Meeting
 
 ## Team Name: Surfside Software
