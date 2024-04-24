@@ -5,37 +5,54 @@
     <meta name="Lab2" content="A brief introduction to HTML"/>
     <link rel="icon" href="screenshots/favicon-16x16.png"/>
     <link href="styles/style.css" rel="stylesheet"/>
-  </head>
-  <body>
 
+    <!-- used style header here-->
+    <style>
+        body {
+            /* use of fallback variable here, and color mix */ 
+            background-color: var(--main-color, color-mix(in srgb, #000000 85%, #ffffff 15%));
+        }
+    </style>
+
+    <!-- imported jersey font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+  </head>
+  <body attribute="mainBody">
     <header>
+        <div id = "topHeader">
+            <!-- used inline styling here, and display: inline, mm units-->
             <h1>Meeting Minutes </h1>
-            <img src="screenshots/favicon-32x32.png" alt="Logo Image">
-        <p> <span>This is an <strong>informational page</strong> of my group's first meeting!</span> <br> I was unable to attend ;-; </p> 
+            <img id = "logo" src="screenshots/favicon-32x32.png" alt="Logo Image" style = "display: inline; width: 50px; height: 12mm">
+        </div>
+        <p> 
+            This is an <strong>informational page</strong> of my group's first meeting!
+        </p> 
     </header>
 
     <main>
-        <h2> Surfside Software's Introduction Meeting (April 10th)</h2>
-        <section> 
-            <hr>
-            <h3> Attended by:</h3>
+        <h2 style = "font-family: sans-serif;"> Surfside Software's Introduction Meeting (April 10th)</h2>
+        <hr>
+        <div id = "AttendanceGrid"> 
+            <h3 id = "yesAttend"> Attended by:</h3>
                 <ul>
-                    <li> Jacob </li>
-                    <li> Melissa </li>
-                    <li> Pedro </li>
-                    <li> Peter </li>
-                    <li> Ruiping </li>
-                    <li> Ryan L. </li>
-                    <li> Sean </li>
-                    <li> Sihan </li>
+                    <li class = "Attended"> Jacob </li>
+                    <li class = "Attended"> Melissa </li>
+                    <li class = "Attended"> Pedro </li>
+                    <li class = "Attended"> Peter </li>
+                    <li class = "Attended"> Ruiping </li>
+                    <li class = "Attended"> Ryan L. </li>
+                    <li class = "Attended"> Sean </li>
+                    <li class = "Attended"> Sihan </li>
                 </ul>
-            <h3> Absent:</h3>
+            <h3 id = "noAttend"> Absent:</h3>
                 <ul>
-                    <li> Sunho </li>
-                    <li> Ryan I. </li>
-                    <li> Trent </li>
+                    <li class = "NotAttended"> Sunho </li>
+                    <li class = "NotAttended"> Ryan I. </li>
+                    <li class = "NotAttended"> Trent </li>
             </ul>
-        </section>
+        </div>
         <hr>
         <section>
             <h2> Agenda: </h2>
@@ -69,7 +86,7 @@
 
             <br>
             <br>
-            <details>
+            <details >
                 <summary>
                     Click to go to Daniel Caesar's Spotify page
                 </summary>
@@ -107,12 +124,11 @@
                         <option value="other">Other</option>
                     </select><br><br>
         
-                    <button type="submit">Submit</button>
+                    <button class = "submitButton" type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
     </main>
-
 
     <footer>
         <nav>
@@ -120,6 +136,5 @@
             <a href="https://github.com/cse110-sp24-group17/cse110-sp24-group17">Surfside Software-Team 17's Github Repo</a>
         </nav>
     </footer>
-
   </body>
 </html>
