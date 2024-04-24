@@ -1,0 +1,149 @@
+/* This is my first ever file written in CSS */ 
+
+@font-face {
+    font-family: "myFont";
+    src: url("https://fonts.google.com/specimen/Jersey+20");
+}
+
+/* Define a CSS variable to have a fallback */ 
+:root {
+    --main-color: #1f2329; 
+}
+
+/* Universal Selector */ 
+* {
+    color: rgb(255,255,255); 
+}
+
+/* Attribute selector, flexbox and 3 attributes */ 
+[attribute = "mainBody"] {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin: 10px; 
+}
+
+/* Grid Layout */
+#AttendanceGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+/* Adjust short-syntax padding */
+h1 {
+    padding: 10px 10px 10px 10px;
+    display: inline;
+}
+
+
+/* Use long syntax margin here, element selector, position static */ 
+#topHeader {
+    margin-top: 10px; 
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px; 
+    position: static; 
+     
+}
+
+/* Class Selector */
+.submitButton {
+    color: black; 
+    cursor: pointer; 
+}
+
+/* Combining two selectors */ 
+li.Attended {
+    color: greenyellow;
+    font-family: "Jersey 20", monospace;
+}
+
+li.NotAttended {
+    color: darkred;
+    font-family: "Jersey 20", monospace;
+}
+
+/* Descendant Combinator selector, short syntax margins, border reqs position relativee */ 
+#topHeader #logo {
+    margin: 0mm 10px -10px 10px; 
+    border-style: solid; 
+    border-color: white;
+    border-width: 3Q;
+    border-radius: 1em; 
+    position: relative; 
+}
+
+/* Child Combinator, text styles, hsla color */ 
+#topHeader > h1 {
+    color: rgb(255,255,255);
+    text-decoration: underline hsla(30, 100%, 100%, 1); 
+    text-align: center; 
+} 
+
+/* Adjacent Sibling Combinator */
+summary + a {
+    text-decoration: none; 
+    color: aqua; 
+}
+
+/* General Sibling Combinator & inline-block */ 
+h3 ~ a {
+   color: blue; 
+   display: inline-block;
+}
+
+/* Selector List, font*/
+#yesAttend, #noAttend {
+    font-family: "Jersey 20", monospace;
+}
+
+/* has: selector */
+ol:has(li) {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Nested Selector and long-syntax padding */
+p {
+    text-decoration-color: white; 
+    padding-top: 5px;
+    padding-left: 1px;
+    padding-right: 1px; 
+    padding-bottom: 1px;
+
+    & > strong {
+        color: tomato; 
+        &:hover {
+            color: ivory;
+            cursor: progress;
+            background-color: tomato; 
+            display: inline;
+        }
+    }
+}
+/* Psuedo class Selectors and relative units */
+summary:hover {
+    color: blueviolet;
+    cursor: pointer; 
+    height: .5cm;
+    width: 20rem;
+    min-width: 1vh;
+    max-width: 50vw;
+
+}
+
+a:active {
+    color: red; 
+}
+
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: grey;
+    }
+}
+
